@@ -1,0 +1,15 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+app_name: "Portfolio"
+micros:
+  - name: frontend
+    src: ./frontend
+    engine: vue
+    primary: true
+
+  - name: backend
+    src: ./backend
+    engine: nodejs16
+    dev: npm run dev
+    run: npm run start
+    path: api
