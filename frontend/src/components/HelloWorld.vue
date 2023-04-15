@@ -12,8 +12,8 @@ const data2 = ref("");
 const loadData = async function () {
   console.log("axios => ", axios);
   const [response, response2] = await Promise.all([
-    axios.get(),
-    axios.get("/test"),
+    axios.get("users"),
+    axios.get("projects"),
   ]);
   console.log("response => ", response);
   data.value = response.data;
